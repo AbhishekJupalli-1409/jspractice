@@ -1,0 +1,12 @@
+const myDate = new Date();
+let object = myDate;
+
+do {
+  object = Object.getPrototypeOf(object);
+  console.log(object);
+} while (object);
+
+// Date.prototype
+// Object { }
+// null
+let hello = [10, 20, 30, 40, 50];
